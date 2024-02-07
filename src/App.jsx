@@ -14,7 +14,7 @@ export default function App() {
   let scope = ['user-read-private', 'user-read-email', 'user-read-playback-state', 'user-modify-playback-state', 'user-read-currently-playing', 'user-read-recently-played', 'user-read-playback-position', 'user-top-read','playlist-read-private', 'playlist-read-collaborative'];
 
   let url = 'https://accounts.spotify.com/authorize'
-  const redirect_url = 'http://localhost:5173'
+  const redirect_url = import.meta.env.VITE_RED_URI;
 
   const apiUrl = 'https://api.spotify.com/v1/'
 
